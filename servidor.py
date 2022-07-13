@@ -60,7 +60,7 @@ while True:
                 del clientes[notificado_socket]
                 continue
             usuario = clientes[notificado_socket]
-            numeroIndex = random.randint(0,3)  
+            numeroIndex = random.randint(0,12)  
 
 
             print(f"Mensagem recebida de {usuario['data'].decode('utf-8')}: {mensagem['data'].decode('utf-8')}")
