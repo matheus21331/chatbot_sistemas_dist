@@ -69,7 +69,7 @@ while True:
                 if cliente_socket != notificado_socket:
                     cliente_socket.send(usuario['header'] + usuario['data'] + mensagem['header'] + mensagem['data'])
             if "curiosidade" in mensagem['data'].decode('utf-8').lower() or "curioso" in mensagem['data'].decode('utf-8').lower() or "entediado" in mensagem['data'].decode('utf-8').lower() or "triste" in mensagem['data'].decode('utf-8').lower() or "conte" in mensagem['data'].decode('utf-8').lower(): 
-                print(f"A sua mensagem de motivação é: {mensagens[numeroIndex]}")
+                print(f"Você sabia que ... {mensagens[numeroIndex]}")
             
   
     for notificado_socket in exception_sockets:
